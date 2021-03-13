@@ -54,7 +54,7 @@ This is a Javascript music App of which the user can Search, Delete, and Add mus
   print out all the music.
 
   ```
-console.log(musicPlayer.stack)  
+console.log(newSong.stack)  
 ```
 
 [Author]{samrey2018@gmail.com}

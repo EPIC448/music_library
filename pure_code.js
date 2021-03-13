@@ -58,20 +58,18 @@ const musicObj = [
    this.title = title
    this.genre = genre
    this.year = year
-   // this.stack = musicObj
+    this.stack = musicObj
    }
   
 
-  // Search for music by title
+  
    search(query = null, array){
    array = musicObj
   
    return array.map(function(element){
     return element.title.toLowerCase().indexOf(query.toLowerCase() ) != -1 ? element : ""
       })
-    }                          // working as expected 
-
-  //Delete music by first letter of the title
+    }                          
 
   delete(query = null) {
 
@@ -79,12 +77,11 @@ const musicObj = [
          if(eachMusic.title.toLowerCase().indexOf(query.toLowerCase() ) )
 
          return eachMusic
-       })                       //Working as expected. 
+       })                       
 
      }
 
-     // Add to stack
-     // Users should be able to add a new title, genre, year to the stack. // Need more work.  
+    
      add(title, genre,year){
        let newSong = new this.constructor()
        newSong.title = title;
@@ -99,16 +96,11 @@ const musicObj = [
   
 
 const newSong = new MusicPlayer()
-//... New approach
+
 
  newSong.add( "The One" ,"reggie", 1970 )
- console.log(MusicPlayer.stack)     
-  // working
-
- // console.log(musicPlayer.delete("home")) // Working. 
- //  musicPlayer.search("sweet") // working.. but most be inserted as a string.  
- // console.log(musicPlayer.stack)  // print out all the music.
-//====================================
+ console.log(newSong.stack)     
+  
  
 
 // Resourcess
