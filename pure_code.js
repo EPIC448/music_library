@@ -47,7 +47,7 @@ const musicObj = [
   
   ]
 
-  console.log(musicObj)
+
 
 
   // =====================================================================
@@ -102,7 +102,7 @@ const newSong = new MusicPlayer()
 //... New approach
 
  newSong.add( "The One" ,"reggie", 1970 )
- console.log(musicObj)     
+ console.log(MusicPlayer.stack)     
   // working
 
  // console.log(musicPlayer.delete("home")) // Working. 
